@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Cerebri Sans Pro';
+  src: url('../src/assets/fonts/CerebriSansPro-Regular.woff2') format('woff2'),
+      url('../src/assets/fonts/CerebriSansPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+*{
+  font-family: "Cerebri Sans Pro";
+}
+
+@theme {
+  --color-primary: oklch(0.68 0.1532 22.41);
+}
+
+@layer base {
+    /* heading text */
+  .text-display {
+    @apply text-[48px] leading-[56px] font-bold tracking-tight;
+  }
+
+  .text-h1 {
+    @apply text-[32px] font-semibold;
+  }
+
+  .text-h2 {
+    @apply text-[28px] leading-[24px] font-bold;
+  }
+
+  .text-h3 {
+    @apply text-[26px] leading-[38px] font-bold;
+  }
+
+  .text-h4 {
+    @apply text-[24px] leading-[36px] font-bold;
+  }
+  .text-h6 {
+    @apply text-[15px] leading-[16px] font-semibold;
+  }
+
+
+    /* body text */
+  .text-body-3xl {
+    @apply text-[28px] leading-[24px] font-light;
+  }
+
+  .text-body-lg {
+    @apply text-[18px] leading-[28px] font-normal;
+  }
+
+  .text-body-md {
+    @apply text-[16px] leading-[16px] font-semibold;
+  }
+
+  .text-body-sm {
+    @apply text-[14px] leading-[24px] font-normal;
+  }
+
+  .text-caption {
+    @apply text-[12px] leading-[16px] font-medium;
+  }
+}
+
